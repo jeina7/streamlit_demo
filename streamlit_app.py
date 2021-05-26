@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 
-df = pd.read_csv("2021-05-24.csv").drop("Unnamed: 0", axis=1)
+df = pd.read_csv("sample.csv").drop("Unnamed: 0", axis=1)
 df["ba_mean"] = df["ba_mean"].astype(int)
 df["last_daily_budget"] = df["last_daily_budget"].astype(int)
 df["daily_spend"] = df["daily_spend"].astype(int)
